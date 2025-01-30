@@ -1,0 +1,1518 @@
+@import url();
+
+@font-face {
+    font-family: 'Futura';
+    src: url('fonts/futura/Futura.woff2') format('woff2'),
+         url('fonts/futura/Futura.woff') format('woff'),
+         url('fonts/futura/Futura.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* tête de page */ 
+
+header.header{
+    display: flex;
+    align-items: center;
+}
+
+header.header img{ /* logo */
+    width: 125px;
+}
+
+
+section.top-page { /* Grosse Image */
+    background: url('../Images/Présentation.png');
+    background-size: cover;
+    height: 100vh;
+    padding: 25px;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100vw; /* Pour que la largeur de la page s'adapte à la fenêtre */
+    overflow-x: hidden; /* Pour éviter tout défilement horizontal indésirable */
+  }
+
+/* page de bienvenue */ 
+.landing-page {
+    padding: 20px 50px;
+}
+.big-title{
+    color: white;
+    font-size: 80px;
+}
+
+.scroll-down{
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    bottom: 140px ;
+}
+/* menu de navigation */
+
+/* Supprimer les points de liste et aligner les éléments horizontalement */
+.horizontal-menu {
+    list-style-type: none; /* Supprime les puces des éléments de liste */
+    display: flex; /* Aligne les éléments horizontalement */
+    padding: 0; /* Supprime le padding par défaut */
+    margin: 0; /* Supprime la marge par défaut */
+}
+
+/* Ajoute un espacement de 40px au premier élément du menu */
+.horizontal-menu li:first-child {
+    margin-left: 50px; /* Espace de 40px entre le logo et les titres */
+}
+
+.horizontal-menu li {
+    margin-right: 45px; /* Espacement de 45px entre les éléments */
+}
+
+/* Style pour les liens dans le menu */
+.menu-link {
+    font-weight: bold; /* Mettre le texte en gras */
+    text-decoration: none; /* Enlever le soulignement */
+    color: #ffffff; /* Couleur du texte blanche */
+    font-size: 17px; /* Taille de police de 17px */
+}
+
+.menu-link:hover {
+    color: #a5c6e9; /* Couleur au survol */
+    cursor: pointer; /* Curseur en forme de main */
+}
+
+/* Footer */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Lien sans soulignement */
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  /* Footer global */
+  footer {
+    background-color: #030138; /* Couleur principale */
+    color: white;
+    font-family: 'Futura', sans-serif; /* À remplacer par une police spécifique */
+    padding: 2em 0;
+    padding-top: 50px; /* Crée un espace de 50px en haut du footer */
+
+  }
+  
+  /* Conteneur principal */
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  /* Sections (Sources, Rejoindre, Newsletter) */
+  .footer-section {
+    flex: 1;
+    margin: 0 1em;
+  }
+  
+  .footer-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1em;
+    font-family: 'Futura', sans-serif; /* Espace pour police spécifique des titres */
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    line-height: 2em;
+  }
+  
+  .footer-section ul li {
+    font-size: 1rem;
+    font-family: 'Arial', sans-serif; /* Police pour le texte des listes */
+  }
+  
+  .footer-section form input[type="email"] {
+    width: 100%;
+    padding: 0.5em;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-bottom: 1em;
+  }
+  
+  .footer-section form button {
+    background-color: #2680c2;
+    color: white;
+    border: none;
+    padding: 0.7em;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .footer-section form button:hover {
+    background-color: #1b5b8d;
+  }
+  
+  /* Ligne de séparation */
+  hr {
+    width: 80%;
+    margin: 2em auto;
+    border: 0;
+    border-top: 1px solid #ddd;
+  }
+  
+  /* Réseaux sociaux */
+  .footer-social {
+    text-align: center;
+    margin: 2em 0;
+  }
+  
+  .footer-social p {
+    font-size: 1.2rem;
+    margin-bottom: 1em;
+    font-family: 'Futura', sans-serif; /* Espace pour police spécifique des sous-titres */
+  }
+  
+  .footer-social ul {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    list-style: none;
+  }
+  
+  .footer-social ul li {
+    width: 40px;
+  }
+  
+  .footer-social img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Footer bottom */
+  .footer-bottom {
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 1em;
+    color: #ddd;
+    font-family: 'Verdana', sans-serif; /* Espace pour texte des mentions légales */
+  }
+  
+  .footer-bottom a {
+    color: #ddd;
+  }
+  
+  .footer-bottom a:hover {
+    color: white;
+  }
+  
+  /* Texte en gras */
+  .bold {
+    font-weight: bold;
+  }
+
+  /* Section Avant-Propos */
+#avant-propos {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #ffffff;
+}
+
+#avant-propos h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 20px;
+    color: #333333;
+    font-family: 'Futura', sans-serif;
+}
+
+#avant-propos h2 {
+    font-size: 1.5em;
+    font-style: italic;
+    margin-bottom: 30px;
+    color: #555555;
+    font-family: 'Futura', sans-serif;
+}
+
+#avant-propos p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: justify;
+    line-height: 1.8;
+    color: #444444;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Alignement global et police */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styles du header */
+.header {
+    display: flex;
+    align-items: center; /* Aligne les éléments verticalement au centre */
+    justify-content: space-between; /* Espace entre le logo et le menu */
+    padding: 10px 20px; /* Marges internes pour aérer */
+    position: absolute; /* Positionnement par rapport à la landing page */
+    top: 0;
+    width: 100%; /* Prend toute la largeur */
+    z-index: 1000; /* Toujours au-dessus de la photo */
+}
+
+/* Logo */
+.header img {
+    height: 50px; /* Ajustez la taille selon vos besoins */
+}
+
+/* Menu horizontal */
+.nav {
+    display: flex;
+    align-items: center; /* Centrage vertical des liens */
+}
+
+.horizontal-menu {
+    display: flex;
+    list-style: none; /* Supprime les puces des listes */
+    padding: 0;
+    margin: 0;
+}
+
+.menu-item {
+    position: relative; /* Nécessaire pour le positionnement du sous-menu */
+    margin-left: 20px; /* Espacement entre les liens */
+}
+
+.menu-link {
+    text-decoration: none;
+    color: white; /* Texte blanc pour contraster avec la photo */
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Effet au survol */
+.menu-link:hover {
+    color: yellow;
+    transform: scale(1.1); /* Mise en valeur au survol */
+}
+
+/* Sous-menu (volet déroulant) */
+.dropdown {
+    display: none; /* Caché par défaut */
+    position: absolute;
+    top: 100%; /* Juste en dessous du lien parent */
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.9); /* Fond blanc légèrement transparent */
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre douce */
+    min-width: 150px; /* Largeur minimale pour le sous-menu */
+}
+
+/* Liens dans le sous-menu */
+.dropdown li a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Effet au survol dans les sous-menus */
+.dropdown li a:hover {
+    background-color: yellow;
+    color: black;
+}
+
+/* Affichage du sous-menu au survol */
+.menu-item:hover .dropdown {
+    display: block; /* Affiche le sous-menu */
+    z-index: 1000;
+}
+
+/* Général */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Fond noir pour mettre en valeur le contenu */
+}
+
+/* Header */
+.header {
+    display: flex;
+    align-items: center; /* Aligne les éléments verticalement */
+    justify-content: space-between; /* Espace entre logo et menu */
+    padding: 10px 20px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Logo */
+.header img {
+    height: 70px;
+}
+
+/* Menu principal */
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.horizontal-menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-item {
+    position: relative; /* Nécessaire pour positionner les sous-menus */
+    margin-left: 20px;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease, transform 0.3s ease;
+    padding: 10px 15px;
+}
+
+/* Animation au survol */
+.menu-link:hover {
+    color: rgb(245, 245, 133);
+    transform: scale(1.1);
+}
+
+/* Sous-menus (volets déroulants) */
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%; /* Position sous le parent */
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    min-width: 150px;
+    z-index: 1000;
+    opacity: 0; /* Initialement invisible */
+    transition: opacity 0.5s ease; /* Ajoute une transition douce */
+}
+
+/* Liens des sous-menus */
+.dropdown li a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown li a:hover {
+    background-color: yellow;
+    color: black;
+}
+
+/* Sous-menu visible au survol */
+.menu-item:hover .dropdown {
+    display: block;
+    opacity: 1; /* Rends visible avec un délai */
+}
+
+/* Titre (Landing Page) */
+.landing-page {
+    text-align: center;
+    margin-top: 150px; /* Décale le titre vers le bas */
+}
+
+.big-title {
+    color: white;
+    font-size: 50px;
+    margin: 10px 0;
+}
+
+/* Animation du bouton */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+}
+
+section.top-pagepres { /* Grosse Image */
+    background: url('../Images/Présentation.png');
+    background-size: cover;
+    height: 100vh;
+    padding: 25px;
+}
+.big-title {
+    color: white;
+    font-size: 90px; /* Taille augmentée */
+    margin: 10px 0;
+}
+
+.textepres p {
+    margin: 0;
+    text-align: justify;
+}
+
+/* Section Présentation */
+.pres-page {
+    background-color: white; /* Fond blanc */
+    padding: 10px 20px; /* Espacement intérieur */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Légère ombre */
+    margin-bottom: 0px; /* Réduit l'espace entre la présentation et la section suivante */
+}
+
+.photopres {
+    max-width: 370px; /* Taille maximale de l'image */
+    margin-left: 120px; /* Décale l'image vers la droite */
+    margin-right: 50px; /* Espace supplémentaire pour ajuster la position */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Légère ombre */
+    align-self: flex-start; /* Déplace l'image légèrement vers le haut */
+}
+
+/* Fond Global */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white; /* Fond blanc global après la landing page */
+    line-height: 1.6;
+}
+
+/* Présentation - Section */
+.presentation-section {
+    display: flex; /* Alignement horizontal avec Flexbox */
+    align-items: center; /* Centre verticalement l'image et le texte */
+    gap: 20px; /* Espacement entre l'image et le texte */
+    justify-content: center; /* Centre l'ensemble (image + texte) horizontalement */
+}
+
+.textepres {
+    flex: 1; /* Le texte prend l'espace restant */
+    color: #333; /* Couleur du texte */
+    text-align: justify; /* Justifie le texte */
+}
+
+/* Section Présentation */
+.foot-page {
+    background-color: white; /* Fond blanc */
+    padding: 10px 20px; /* Espacement intérieur */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Légère ombre */
+    margin-top: 0; /* Élimine l'espace au-dessus de la section foot */
+}
+
+/* Positionnement de l'image de présentation */
+.footpres {
+    max-width: 450px; /* Taille maximale de l'image */
+    margin-left: 50px; /* Décale l'image légèrement vers la droite */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Légère ombre */
+    align-self: center; /* Centre verticalement l'image */
+}
+
+/* Présentation - Section : Contient l'image et le texte */
+.foot-section {
+    display: flex; /* Alignement horizontal avec Flexbox */
+    align-items: center; /* Centre verticalement l'image et le texte */
+    gap: 20px; /* Espacement entre l'image et le texte */
+    justify-content: flex-start; /* Aligne l'ensemble à gauche */
+    text-align: justify;
+    max-width: 1200px; /* Optionnel : pour limiter la largeur de la section */
+    margin: 40px auto; /* Centre l'ensemble horizontalement */
+    flex-direction: row-reverse; /* Inverse l'ordre des éléments (image à droite, texte à gauche) */
+}
+
+/* Texte à droite de l'image (qui devient à gauche après l'inversion) */
+.textecine {
+    flex: 1; /* Le texte prend l'espace restant */
+    color: #333; /* Couleur du texte */
+    text-align: justify; /* Justifie le texte */
+    font-size: 16px; /* Taille de texte agréable à lire */
+    line-height: 1.6; /* Améliore la lisibilité */
+    padding: 0 20px; /* Ajoute un peu de padding pour espacer le texte */
+}
+.textecine p {
+    margin: 0;
+    text-align: justify;
+}
+
+/* Section Présentation */
+.cinema-page {
+    background-color: white; /* Fond blanc */
+    padding: 10px 20px; /* Espacement intérieur */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Légère ombre */
+    margin-bottom: 0px; /* Réduit l'espace entre la présentation et la section suivante */
+}
+
+.cinepres {
+    max-width: 530px; /* Taille maximale de l'image */
+    margin-left: 100px; /* Décale l'image vers la droite */
+    margin-right: 50px; /* Espace supplémentaire pour ajuster la position */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Légère ombre */
+    align-self: flex-start; /* Déplace l'image légèrement vers le haut */
+}
+
+/* Fond Global */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white; /* Fond blanc global après la landing page */
+    line-height: 1.6;
+}
+
+/* Présentation - Section */
+.cinema-section {
+    display: flex; /* Alignement horizontal avec Flexbox */
+    align-items: center; /* Centre verticalement l'image et le texte */
+    gap: 20px; /* Espacement entre l'image et le texte */
+    justify-content: center; /* Centre l'ensemble (image + texte) horizontalement */
+}
+
+.textecine {
+    flex: 1; /* Le texte prend l'espace restant */
+    color: #333; /* Couleur du texte */
+    text-align: justify; /* Justifie le texte */
+}
+/* Section Présentation */
+.data-page {
+    background-color: white; /* Fond blanc */
+    padding: 10px 20px; /* Espacement intérieur */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Légère ombre */
+    margin-top: 0; /* Élimine l'espace au-dessus de la section foot */
+}
+
+/* Positionnement de l'image de présentation */
+.datapres {
+    max-width: 450px; /* Taille maximale de l'image */
+    margin-left: 50px; /* Décale l'image légèrement vers la droite */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Légère ombre */
+    align-self: center; /* Centre verticalement l'image */
+}
+
+/* Présentation - Section : Contient l'image et le texte */
+.data-section {
+    display: flex; /* Alignement horizontal avec Flexbox */
+    align-items: center; /* Centre verticalement l'image et le texte */
+    gap: 20px; /* Espacement entre l'image et le texte */
+    justify-content: flex-start; /* Aligne l'ensemble à gauche */
+    text-align: justify;
+    max-width: 1200px; /* Optionnel : pour limiter la largeur de la section */
+    margin: 40px auto; /* Centre l'ensemble horizontalement */
+    flex-direction: row-reverse; /* Inverse l'ordre des éléments (image à droite, texte à gauche) */
+}
+
+.textecollege p {
+    margin: 0;
+    text-align: justify;
+}
+
+/* Section Présentation */
+.college-page {
+    background-color: white; /* Fond blanc */
+    padding: 10px 20px; /* Espacement intérieur */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Légère ombre */
+    margin-bottom: 0px; /* Réduit l'espace entre la présentation et la section suivante */
+}
+
+.photoradios {
+    max-width: 370px; /* Taille maximale de l'image */
+    margin-left: 120px; /* Décale l'image vers la droite */
+    margin-right: 50px; /* Espace supplémentaire pour ajuster la position */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Légère ombre */
+    align-self: flex-start; /* Déplace l'image légèrement vers le haut */
+}
+
+/* Fond Global */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white; /* Fond blanc global après la landing page */
+    line-height: 1.6;
+}
+
+/* Présentation - Section */
+.college-section {
+    display: flex; /* Alignement horizontal avec Flexbox */
+    align-items: center; /* Centre verticalement l'image et le texte */
+    gap: 20px; /* Espacement entre l'image et le texte */
+    justify-content: center; /* Centre l'ensemble (image + texte) horizontalement */
+}
+
+.textecollege {
+    flex: 1; /* Le texte prend l'espace restant */
+    color: #333; /* Couleur du texte */
+    text-align: justify; /* Justifie le texte */
+}
+
+/* Section Présentation */
+.lycee-page {
+    background-color: white; /* Fond blanc */
+    padding: 10px 20px; /* Espacement intérieur */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Légère ombre */
+    margin-top: 0; /* Élimine l'espace au-dessus de la section foot */
+}
+
+/* Positionnement de l'image de présentation */
+.jeanmopres {
+    max-width: 450px; /* Taille maximale de l'image */
+    margin-left: 50px; /* Décale l'image légèrement vers la droite */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Légère ombre */
+    align-self: center; /* Centre verticalement l'image */
+}
+
+/* Présentation - Section : Contient l'image et le texte */
+.lycee-section {
+    display: flex; /* Alignement horizontal avec Flexbox */
+    align-items: center; /* Centre verticalement l'image et le texte */
+    gap: 20px; /* Espacement entre l'image et le texte */
+    justify-content: flex-start; /* Aligne l'ensemble à gauche */
+    text-align: justify;
+    max-width: 1200px; /* Optionnel : pour limiter la largeur de la section */
+    margin: 40px auto; /* Centre l'ensemble horizontalement */
+    flex-direction: row-reverse; /* Inverse l'ordre des éléments (image à droite, texte à gauche) */
+}
+
+/* Texte à droite de l'image (qui devient à gauche après l'inversion) */
+.texteinfonum {
+    flex: 1; /* Le texte prend l'espace restant */
+    color: #333; /* Couleur du texte */
+    text-align: justify; /* Justifie le texte */
+    font-size: 16px; /* Taille de texte agréable à lire */
+    line-height: 1.6; /* Améliore la lisibilité */
+    padding: 0 20px; /* Ajoute un peu de padding pour espacer le texte */
+}
+.texteinfonum p {
+    margin: 0;
+    text-align: justify;
+}
+
+/* Section Présentation */
+.infonum-page {
+    background-color: white; /* Fond blanc */
+    padding: 10px 20px; /* Espacement intérieur */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Légère ombre */
+    margin-bottom: 0px; /* Réduit l'espace entre la présentation et la section suivante */
+}
+
+.infonumpres {
+    max-width: 350px; /* Taille maximale de l'image */
+    margin-left: 100px; /* Décale l'image vers la droite */
+    margin-right: 50px; /* Espace supplémentaire pour ajuster la position */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Légère ombre */
+    align-self: flex-start; /* Déplace l'image légèrement vers le haut */
+}
+
+/* Fond Global */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white; /* Fond blanc global après la landing page */
+    line-height: 1.6;
+}
+
+/* Présentation - Section */
+.infonum-section {
+    display: flex; /* Alignement horizontal avec Flexbox */
+    align-items: center; /* Centre verticalement l'image et le texte */
+    gap: 20px; /* Espacement entre l'image et le texte */
+    justify-content: center; /* Centre l'ensemble (image + texte) horizontalement */
+}
+
+.texteinfonum {
+    flex: 1; /* Le texte prend l'espace restant */
+    color: #333; /* Couleur du texte */
+    text-align: justify; /* Justifie le texte */
+}
+/* Section Présentation */
+.stage-page {
+    background-color: white; /* Fond blanc */
+    padding: 10px 20px; /* Espacement intérieur */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Légère ombre */
+    margin-top: 0; /* Élimine l'espace au-dessus de la section foot */
+}
+
+/* Positionnement de l'image de présentation */
+.stagepres {
+    max-width: 350px; /* Taille maximale de l'image */
+    margin-left: 50px; /* Décale l'image légèrement vers la droite */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Légère ombre */
+    align-self: center; /* Centre verticalement l'image */
+}
+
+/* Présentation - Section : Contient l'image et le texte */
+.stage-section {
+    display: flex; /* Alignement horizontal avec Flexbox */
+    align-items: center; /* Centre verticalement l'image et le texte */
+    gap: 20px; /* Espacement entre l'image et le texte */
+    justify-content: flex-start; /* Aligne l'ensemble à gauche */
+    text-align: justify;
+    max-width: 1200px; /* Optionnel : pour limiter la largeur de la section */
+    margin: 40px auto; /* Centre l'ensemble horizontalement */
+    flex-direction: row-reverse; /* Inverse l'ordre des éléments (image à droite, texte à gauche) */
+}
+/* Texte à droite de l'image (qui devient à gauche après l'inversion) */
+.textedecons {
+    flex: 1; /* Le texte prend l'espace restant */
+    color: #333; /* Couleur du texte */
+    text-align: justify; /* Justifie le texte */
+    font-size: 16px; /* Taille de texte agréable à lire */
+    line-height: 1.6; /* Améliore la lisibilité */
+    padding: 0 20px; /* Ajoute un peu de padding pour espacer le texte */
+}
+.textedecons p {
+    margin: 0;
+    text-align: justify;
+}
+
+/* Section Présentation */
+.decons-page {
+    background-color: white; /* Fond blanc */
+    padding: 10px 20px; /* Espacement intérieur */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Légère ombre */
+    margin-bottom: 0px; /* Réduit l'espace entre la présentation et la section suivante */
+}
+
+.deconspres {
+    max-width: 350px; /* Taille maximale de l'image */
+    margin-left: 100px; /* Décale l'image vers la droite */
+    margin-right: 50px; /* Espace supplémentaire pour ajuster la position */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Légère ombre */
+    align-self: flex-start; /* Déplace l'image légèrement vers le haut */
+}
+
+/* Fond Global */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white; /* Fond blanc global après la landing page */
+    line-height: 1.6;
+}
+
+/* Présentation - Section */
+.decons-section {
+    display: flex; /* Alignement horizontal avec Flexbox */
+    align-items: center; /* Centre verticalement l'image et le texte */
+    gap: 20px; /* Espacement entre l'image et le texte */
+    justify-content: center; /* Centre l'ensemble (image + texte) horizontalement */
+}
+
+.textedecons {
+    flex: 1; /* Le texte prend l'espace restant */
+    color: #333; /* Couleur du texte */
+    text-align: justify; /* Justifie le texte */
+}
+
+/* Section générale */
+.photoun-page,
+.photodeux-page {
+    background-color: white; /* Fond blanc */
+    padding: 20px; /* Espacement intérieur autour du contenu */
+    margin: 30px auto; /* Centre la section horizontalement et ajoute plus d'espace entre les sections */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre douce */
+    max-width: 1000px; /* Largeur maximale */
+    text-align: center; /* Texte centré horizontalement */
+}
+
+/* Texte des sections */
+.textephotoun,
+.textephotodeux {
+    margin-bottom: 40px; /* Espacement sous le texte */
+    color: #333; /* Couleur du texte */
+    font-size: 16px; /* Taille lisible */
+    line-height: 1.8; /* Espacement entre les lignes */
+    text-align: justify; /* Justifie le texte */
+    max-width: 900px; /* Étend un peu plus le texte */
+    margin-left: auto; /* Centre horizontalement */
+    margin-right: auto; /* Centre horizontalement */
+}
+
+/* Images des sections */
+.photoiutpres,
+.concertpres {
+    display: block; /* Image en bloc */
+    margin: 20px auto; /* Centre et ajoute de l'espace autour des images */
+    max-width: 100%; /* Adapte l'image à la largeur disponible */
+    height: auto; /* Préserve les proportions */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+/* Section top-pagecrea */
+section.top-pagecrea {
+    background: url('../Images/Créations Visuelles.png'); /* Grosse image de fond */
+    background-size: cover; /* Image couvre tout */
+    background-position: center; /* Centre l'image */
+    height: 100vh; /* Occupe toute la hauteur de l'écran */
+    padding: 25px; /* Ajoute de l'espacement autour du contenu */
+}
+
+/* Ajout de responsivité */
+@media (max-width: 768px) {
+    .photoun-page,
+    .photodeux-page {
+        padding: 15px; /* Réduit le padding sur les petits écrans */
+    }
+
+    .textephotoun,
+    .textephotodeux {
+        font-size: 14px; /* Réduit la taille de la police pour les petits écrans */
+        max-width: 100%; /* Texte utilise tout l'espace disponible */
+    }
+
+    .photoiutpres,
+    .concertpres {
+        margin: 10px auto; /* Moins d'espace autour des images sur mobile */
+        margin-bottom: 60px; /* Espacement sous le texte */
+    }
+}
+
+#photosection h1 {
+    font-size: 2.2em;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 20px;
+    color: #333333;
+    font-family: 'Futura', sans-serif;
+    text-align: center; /* Centre le texte horizontalement */
+}
+
+video {
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Ombre douce */
+    cursor: pointer; /* Change le curseur pour indiquer qu'on peut cliquer */
+}
+
+/* Section générale */
+.videoun-page,
+.videodeux-page {
+    background-color: white; /* Fond blanc */
+    padding: 20px; /* Espacement intérieur autour du contenu */
+    margin: 30px auto; /* Centre la section horizontalement et ajoute plus d'espace entre les sections */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre douce */
+    max-width: 1000px; /* Largeur maximale */
+    text-align: center; /* Texte centré horizontalement */
+}
+
+/* Texte des sections */
+.textevideoun,
+.textevideodeux {
+    margin-bottom: 40px; /* Espacement sous le texte */
+    color: #333; /* Couleur du texte */
+    font-size: 16px; /* Taille lisible */
+    line-height: 1.8; /* Espacement entre les lignes */
+    text-align: justify; /* Justifie le texte */
+    max-width: 900px; /* Étend un peu plus le texte */
+    margin-left: auto; /* Centre horizontalement */
+    margin-right: auto; /* Centre horizontalement */
+}
+
+/* Images des sections */
+.videopropres,
+.filmpres, 
+.malcompres {
+    display: block; /* Image en bloc */
+    margin: 20px auto; /* Centre et ajoute de l'espace autour des images */
+    max-width: 100%; /* Adapte l'image à la largeur disponible */
+    height: auto; /* Préserve les proportions */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+/* Section top-pagecrea */
+section.top-pagecrea {
+    background: url('../Images/Créations Visuelles.png'); /* Grosse image de fond */
+    background-size: cover; /* Image couvre tout */
+    background-position: center; /* Centre l'image */
+    height: 100vh; /* Occupe toute la hauteur de l'écran */
+    padding: 25px; /* Ajoute de l'espacement autour du contenu */
+}
+
+/* Ajout de responsivité */
+@media (max-width: 768px) {
+    .videoun-page,
+    .videodeux-page {
+        padding: 15px; /* Réduit le padding sur les petits écrans */
+    }
+
+    .textevideoun,
+    .textevideodeux {
+        font-size: 14px; /* Réduit la taille de la police pour les petits écrans */
+        max-width: 100%; /* Texte utilise tout l'espace disponible */
+    }
+
+    .videopropres,
+    .filmpres, 
+    .malcompres {
+        margin: 10px auto; /* Moins d'espace autour des images sur mobile */
+        margin-bottom: 60px; /* Espacement sous le texte */
+    }
+}
+
+#videosection h1 {
+    font-size: 2.2em;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 20px;
+    color: #333333;
+    font-family: 'Futura', sans-serif;
+    text-align: center; /* Centre le texte horizontalement */
+}
+
+#designsection h1 {
+    font-size: 2.2em;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 20px;
+    color: #333333;
+    font-family: 'Futura', sans-serif;
+    text-align: center; /* Centre le texte horizontalement */
+}
+
+/* Section générale */
+.design-page {
+    background-color: white; /* Fond blanc */
+    padding: 20px; /* Espacement intérieur autour du contenu */
+    margin: 30px auto; /* Centre la section horizontalement et ajoute plus d'espace entre les sections */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre douce */
+    max-width: 1000px; /* Largeur maximale */
+    text-align: center; /* Texte centré horizontalement */
+}
+
+/* Texte des sections */
+.textedesignun,
+.textedesigndeux,
+.textedesigntrois {
+    margin-bottom: 40px; /* Espacement sous le texte */
+    color: #333; /* Couleur du texte */
+    font-size: 16px; /* Taille lisible */
+    line-height: 1.8; /* Espacement entre les lignes */
+    text-align: justify; /* Justifie le texte */
+    max-width: 900px; /* Étend un peu plus le texte */
+    margin-left: auto; /* Centre horizontalement */
+    margin-right: auto; /* Centre horizontalement */
+}
+
+/* Images des sections */
+.designsolopres,
+.designcollabpres,
+.designcabpres {
+    display: block; /* Image en bloc */
+    margin: 20px auto; /* Centre et ajoute de l'espace autour des images */
+    max-width: 100%; /* Adapte l'image à la largeur disponible */
+    height: auto; /* Préserve les proportions */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+/* Ajout de responsivité */
+@media (max-width: 768px) {
+    .design-page {
+        padding: 15px; /* Réduit le padding sur les petits écrans */
+    }
+
+    .textedesignun,
+    .textedesigndeux,
+    .textedesigntrois {
+        font-size: 14px; /* Réduit la taille de la police pour les petits écrans */
+        max-width: 100%; /* Texte utilise tout l'espace disponible */
+    }
+
+    .designsolopres,
+    .designcollabpres,
+    .designcabpres {
+        margin: 10px auto; /* Moins d'espace autour des images sur mobile */
+    }
+}
+
+.podcast {
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Ombre douce */
+    cursor: pointer; /* Change le curseur pour indiquer qu'on peut cliquer */
+}
+
+/* Section générale */
+.podcastun-page,
+.podcastdeux-page {
+    background-color: white; /* Fond blanc */
+    padding: 20px; /* Espacement intérieur autour du contenu */
+    margin: 30px auto; /* Centre la section horizontalement et ajoute plus d'espace entre les sections */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre douce */
+    max-width: 1000px; /* Largeur maximale */
+    text-align: center; /* Texte centré horizontalement */
+}
+
+/* Texte des sections */
+.textepodcastun,
+.textepodcastdeux {
+    margin-bottom: 40px; /* Espacement sous le texte */
+    color: #333; /* Couleur du texte */
+    font-size: 16px; /* Taille lisible */
+    line-height: 1.8; /* Espacement entre les lignes */
+    text-align: justify; /* Justifie le texte */
+    max-width: 900px; /* Étend un peu plus le texte */
+    margin-left: auto; /* Centre horizontalement */
+    margin-right: auto; /* Centre horizontalement */
+}
+
+/* Images des sections */
+.podcastpres {
+    display: block; /* Image en bloc */
+    margin: 20px auto; /* Centre et ajoute de l'espace autour des images */
+    max-width: 100%; /* Adapte l'image à la largeur disponible */
+    height: auto; /* Préserve les proportions */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+.aufildutempspres {
+    max-width: 60%; /* Taille maximale par rapport au conteneur */
+    width: 400px; /* Largeur fixe légèrement agrandie */
+    height: auto; /* Préserve les proportions */
+    margin: 20px auto; /* Centre et espace l'image */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre douce */
+}
+
+@media (max-width: 768px) {
+    .aufildutempspres {
+        max-width: 80%; /* Largeur réduite mais un peu plus grande sur mobile */
+        width: 300px; /* Taille fixe pour mobile */
+        margin: 15px auto; /* Centre avec espacement réduit */
+    }
+}
+/* Section top-pagecrea */
+section.top-pagejour {
+    background: url('../Images/Journalisme.png'); /* Grosse image de fond */
+    background-size: cover; /* Image couvre tout */
+    background-position: center; /* Centre l'image */
+    height: 100vh; /* Occupe toute la hauteur de l'écran */
+    padding: 25px; /* Ajoute de l'espacement autour du contenu */
+}
+
+/* Ajout de responsivité */
+@media (max-width: 768px) {
+    .podcastun-page,
+    .podcastdeux-page {
+        padding: 15px; /* Réduit le padding sur les petits écrans */
+    }
+
+    .textepodcastun,
+    .textepodcastdeux {
+        font-size: 14px; /* Réduit la taille de la police pour les petits écrans */
+        max-width: 100%; /* Texte utilise tout l'espace disponible */
+    }
+
+    .podcastpres {
+        margin: 10px auto; /* Moins d'espace autour des images sur mobile */
+        margin-bottom: 60px; /* Espacement sous le texte */
+    }
+
+    .aufildutempspres {
+        margin: 10px auto; /* Moins d'espace autour des images sur mobile */
+        margin-bottom: 60px; /* Espacement sous le texte */
+    }
+}
+
+#podcastsection h1 {
+    font-size: 2.2em;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 20px;
+    color: #333333;
+    font-family: 'Futura', sans-serif;
+    text-align: center; /* Centre le texte horizontalement */
+}
+.audio-section {
+    text-align: center; /* Centre le texte et le lecteur */
+    padding: 20px; /* Ajoute de l'espace autour de la section */
+    margin: 20px auto; /* Centre la section horizontalement */
+    max-width: 800px; /* Limite la largeur de la section */
+    background-color: #f9f9f9; /* Fond clair */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre douce */
+}
+
+audio {
+    width: 100%; /* Barre audio occupe toute la largeur du conteneur */
+    max-width: 400px; /* Taille maximale de la barre */
+    margin: 10px auto; /* Centre la barre horizontalement */
+    display: block; /* S'assure qu'elle se comporte comme un bloc */
+}
+
+/* Section générale */
+.emissionun-page,
+.emissiondeux-page {
+    background-color: white; /* Fond blanc */
+    padding: 20px; /* Espacement intérieur autour du contenu */
+    margin: 30px auto; /* Centre la section horizontalement et ajoute plus d'espace entre les sections */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre douce */
+    max-width: 1000px; /* Largeur maximale */
+    text-align: center; /* Texte centré horizontalement */
+}
+
+/* Texte des sections */
+.texteemissionun,
+.texteemissiondeux {
+    margin-bottom: 40px; /* Espacement sous le texte */
+    color: #333; /* Couleur du texte */
+    font-size: 16px; /* Taille lisible */
+    line-height: 1.8; /* Espacement entre les lignes */
+    text-align: justify; /* Justifie le texte */
+    max-width: 900px; /* Étend un peu plus le texte */
+    margin-left: auto; /* Centre horizontalement */
+    margin-right: auto; /* Centre horizontalement */
+}
+
+/* Images des sections */
+.ecouteradiopres,
+.radiocmpres {
+    display: block; /* Image en bloc */
+    margin: 20px auto; /* Centre et ajoute de l'espace autour des images */
+    max-width: 100%; /* Adapte l'image à la largeur disponible */
+    height: auto; /* Préserve les proportions */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+/* Ajout de responsivité */
+@media (max-width: 768px) {
+    .emissionun-page,
+    .emissiondeux-page {
+        padding: 15px; /* Réduit le padding sur les petits écrans */
+    }
+
+    .texteemissionun,
+    .texteemissiondeux {
+        font-size: 14px; /* Réduit la taille de la police pour les petits écrans */
+        max-width: 100%; /* Texte utilise tout l'espace disponible */
+    }
+
+    .ecouteradiopres,
+    .radiocmpres {
+        margin: 10px auto; /* Moins d'espace autour des images sur mobile */
+        margin-bottom: 60px; /* Espacement sous le texte */
+    }
+}
+
+#emissionsection h1 {
+    font-size: 2.2em;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 20px;
+    color: #333333;
+    font-family: 'Futura', sans-serif;
+    text-align: center; /* Centre le texte horizontalement */
+}
+
+/* Titres des sections */
+#veillesection h1 {
+    font-size: 2.2em;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 20px;
+    color: #333333;
+    font-family: 'Futura', sans-serif;
+    text-align: center; /* Centre les titres horizontalement */
+}
+
+/* Section principale */
+.veille-page {
+    background-color: white; /* Fond blanc */
+    padding: 20px; /* Espacement interne */
+    margin: 30px auto; /* Centrage horizontal */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre douce */
+    max-width: 1000px; /* Largeur maximale de la section */
+    text-align: center; /* Centrage global */
+}
+
+/* Sous-sections */
+.veille-section {
+    margin-bottom: 40px; /* Espacement entre les sections */
+}
+
+/* Texte des sous-sections */
+.texte-veille {
+    color: #333; /* Couleur principale du texte */
+    font-size: 16px; /* Taille lisible */
+    line-height: 1.8; /* Espacement entre les lignes */
+    text-align: justify; /* Justifie le texte */
+    max-width: 900px; /* Largeur maximale pour le texte */
+    margin: 0 auto; /* Centre horizontalement */
+    margin-bottom: 20px; /* Espacement avec les images */
+}
+
+/* Images des sous-sections */
+.veille-image {
+    display: block; /* Bloque les images */
+    margin: 20px auto; /* Centre les images */
+    max-width: 100%; /* Images s'adaptent à la largeur disponible */
+    height: auto; /* Conserve les proportions */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+/* Responsivité pour les écrans mobiles */
+@media (max-width: 768px) {
+    .veille-page {
+        padding: 15px; /* Réduit les marges internes */
+    }
+
+    .texte-veille {
+        font-size: 14px; /* Taille du texte adaptée aux petits écrans */
+    }
+
+    .veille-image {
+        max-width: 100%; /* Images prennent toute la largeur disponible */
+    }
+}
+
+/* Ajout d'animations (facultatif) */
+.veille-section {
+    animation: fadeIn 1s ease-in-out; /* Animation d'apparition */
+}
+
+/* Définition de l'animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Monte progressivement */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Section générale */
+.orientationun-page,
+.orientationeux-page {
+    background-color: white; /* Fond blanc */
+    padding: 20px; /* Espacement intérieur autour du contenu */
+    margin: 30px auto; /* Centre la section horizontalement et ajoute plus d'espace entre les sections */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre douce */
+    max-width: 1000px; /* Largeur maximale */
+    text-align: center; /* Texte centré horizontalement */
+}
+
+/* Texte des sections */
+.texteorientationun,
+.texteorientationdeux {
+    margin-bottom: 40px; /* Espacement sous le texte */
+    color: #333; /* Couleur du texte */
+    font-size: 16px; /* Taille lisible */
+    line-height: 1.8; /* Espacement entre les lignes */
+    text-align: justify; /* Justifie le texte */
+    max-width: 900px; /* Étend un peu plus le texte */
+    margin-left: auto; /* Centre horizontalement */
+    margin-right: auto; /* Centre horizontalement */
+}
+
+/* Images des sections */
+.orientationjpres,
+.orientationcpres {
+    display: block; /* Image en bloc */
+    margin: 20px auto; /* Centre et ajoute de l'espace autour des images */
+    max-width: 100%; /* Adapte l'image à la largeur disponible */
+    height: auto; /* Préserve les proportions */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+/* Section top-pagecrea */
+section.top-pagegest {
+    background: url('../Images/Gestion\ de\ Projet.png'); /* Grosse image de fond */
+    background-size: cover; /* Image couvre tout */
+    background-position: center; /* Centre l'image */
+    height: 100vh; /* Occupe toute la hauteur de l'écran */
+    padding: 25px; /* Ajoute de l'espacement autour du contenu */
+}
+
+/* Ajout de responsivité */
+@media (max-width: 768px) {
+    .orientationun-page,
+    .orientationdeux-page {
+        padding: 15px; /* Réduit le padding sur les petits écrans */
+    }
+
+    .texteorientationun,
+    .texteorientationdeux {
+        font-size: 14px; /* Réduit la taille de la police pour les petits écrans */
+        max-width: 100%; /* Texte utilise tout l'espace disponible */
+    }
+
+    .orientationjpres,
+    .orientationcpres {
+        margin: 10px auto; /* Moins d'espace autour des images sur mobile */
+        margin-bottom: 60px; /* Espacement sous le texte */
+    }
+}
+
+#orientationsection h1 {
+    font-size: 2.2em;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 20px;
+    color: #333333;
+    font-family: 'Futura', sans-serif;
+    text-align: center; /* Centre le texte horizontalement */
+}
+
+/* Section générale */
+.evenementsun-page,
+.evenementsdeux-page {
+    background-color: white; /* Fond blanc */
+    padding: 20px; /* Espacement intérieur autour du contenu */
+    margin: 30px auto; /* Centre la section horizontalement et ajoute plus d'espace entre les sections */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre douce */
+    max-width: 1000px; /* Largeur maximale */
+    text-align: center; /* Texte centré horizontalement */
+}
+
+/* Texte des sections */
+.texteevenementsun,
+.texteevenementsdeux {
+    margin-bottom: 40px; /* Espacement sous le texte */
+    color: #333; /* Couleur du texte */
+    font-size: 16px; /* Taille lisible */
+    line-height: 1.8; /* Espacement entre les lignes */
+    text-align: justify; /* Justifie le texte */
+    max-width: 900px; /* Étend un peu plus le texte */
+    margin-left: auto; /* Centre horizontalement */
+    margin-right: auto; /* Centre horizontalement */
+}
+
+/* Images des sections */
+.cdelaveillepres {
+    display: block; /* Image en bloc */
+    margin: 20px auto; /* Centre et ajoute de l'espace autour des images */
+    width: 80%; /* Garde la taille initiale à 80% */
+    max-width: 1200px; /* Limite maximale de la largeur */
+    height: auto; /* Préserve les proportions */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Ombre légère mais plus marquée */
+}
+
+.expodatapres {
+    display: block; /* Image en bloc */
+    margin: 20px auto; /* Centre et ajoute de l'espace autour des images */
+    width: 60%; /* Taille réduite à 60% */
+    max-width: 1000px; /* Limite maximale de la largeur */
+    height: auto; /* Préserve les proportions */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Ombre légère mais plus marquée */
+}
+
+/* Ajout de responsivité */
+@media (max-width: 768px) {
+    .evenementsun-page,
+    .evenementsdeux-page {
+        padding: 15px; /* Réduit le padding sur les petits écrans */
+    }
+
+    .texteevenementsun,
+    .texteevenementsdeux {
+        font-size: 14px; /* Réduit la taille de la police pour les petits écrans */
+        max-width: 100%; /* Texte utilise tout l'espace disponible */
+    }
+
+    .cdelaveillepres {
+        width: 95%; /* Adapte l'image pour les petits écrans */
+        max-width: 100%; /* S'assure que l'image ne dépasse pas l'écran */
+        margin: 10px auto; /* Moins d'espace autour des images sur mobile */
+    }
+
+    .expodatapres {
+        width: 75%; /* Taille légèrement réduite sur mobile */
+        max-width: 100%; /* S'assure que l'image ne dépasse pas l'écran */
+        margin: 10px auto; /* Moins d'espace autour des images sur mobile */
+    }
+}
+
+#evenementssection h1 {
+    font-size: 2.2em;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 20px;
+    color: #333333;
+    font-family: 'Futura', sans-serif;
+    text-align: center; /* Centre le texte horizontalement */
+}
+.big-title {
+    font-family: 'Noto Serif Todhri', serif; /* Applique la police Noto Serif Todhri */
+    font-size: 5em; /* Exemple de taille de police, ajuste comme tu veux */
+    font-weight: bold; /* Met en gras */
+    color: #ffffff; /* Couleur du texte, à ajuster si nécessaire */
+    text-align: center; /* Centre le texte horizontalement */
+    margin-bottom: 20px; /* Espacement sous le titre */
+}
+
+.big-title1 {
+    font-family: 'Noto Serif Todhri', serif; /* Applique la police Noto Serif Todhri */
+    font-size: 6em; /* Exemple de taille de police, ajuste comme tu veux */
+    font-weight: bold; /* Met en gras */
+    color: #ffffff; /* Couleur du texte, à ajuster si nécessaire */
+    text-align: center; /* Centre le texte horizontalement */
+    margin-bottom: 20px; /* Espacement sous le titre */
+    margin-top: 100px; /* Ajoute un espace au-dessus du titre pour le faire descendre */
+}
+/* Appliquer une marge plus grande au premier élément */
+.horizontal-menu li:first-child {
+    margin-left: 20px; /* Marge plus grande pour le premier élément */
+}
+
+/* Appliquer une marge uniforme à tous les autres éléments */
+.horizontal-menu li {
+    margin-left: 20px; /* Applique un espacement uniforme aux autres éléments */
+}
