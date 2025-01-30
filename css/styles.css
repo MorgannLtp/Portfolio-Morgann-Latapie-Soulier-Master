@@ -24,6 +24,7 @@ header.header img{ /* logo */
 section.top-page { /* Grosse Image */
     background: url('../Images/Présentation.png');
     background-size: cover;
+    background-position: center; /* Centre l'image */
     height: 100vh;
     padding: 25px;
 }
