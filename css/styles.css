@@ -20,11 +20,10 @@ header.header img{ /* logo */
     width: 125px;
 }
 
-
-section.top-page { /* Grosse Image */
-    background: url('../Images/Présentation.png');
+section.top-page {
+    background: url('Images/Présentation.png');
     background-size: cover;
-    background-position: center; /* Centre l'image */
+    background-position: center;
     height: 100vh;
     padding: 25px;
 }
