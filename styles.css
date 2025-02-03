@@ -464,12 +464,6 @@ body {
     }
 }
 
-section.top-pagepres { /* Grosse Image */
-    background: url('../Images/Présentation.png');
-    background-size: cover;
-    height: 100vh;
-    padding: 25px;
-}
 .big-title {
     color: white;
     font-size: 90px; /* Taille augmentée */
