@@ -21,7 +21,7 @@ header.header img{ /* logo */
 }
 
 section.top-pagepres {
-    background: url('../Images/Présentation.png');
+    background: url('../Images/Presentation.png');
     background-size: cover;
     background-position: center;
     height: 100vh;
