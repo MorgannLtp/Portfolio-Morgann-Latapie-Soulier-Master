@@ -1510,3 +1510,153 @@ section.top-pagegest {
 .horizontal-menu li {
     margin-left: 20px; /* Applique un espacement uniforme aux autres éléments */
 }
+
+/* Section générale */
+.ereputationun-page,
+.ereputationdeux-page {
+    background-color: white; /* Fond blanc */
+    padding: 20px; /* Espacement intérieur autour du contenu */
+    margin: 30px auto; /* Centre la section horizontalement et ajoute plus d'espace entre les sections */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre douce */
+    max-width: 1000px; /* Largeur maximale */
+    text-align: center; /* Texte centré horizontalement */
+}
+
+/* Texte des sections */
+.texteereputationun,
+.texteereputationdeux {
+    margin-bottom: 40px; /* Espacement sous le texte */
+    color: #333; /* Couleur du texte */
+    font-size: 16px; /* Taille lisible */
+    line-height: 1.8; /* Espacement entre les lignes */
+    text-align: justify; /* Justifie le texte */
+    max-width: 900px; /* Étend un peu plus le texte */
+    margin-left: auto; /* Centre horizontalement */
+    margin-right: auto; /* Centre horizontalement */
+}
+
+/* Images des sections */
+.bordoliciouspres,
+.lsdesignpres {
+    display: block; /* Image en bloc */
+    margin: 20px auto; /* Centre et ajoute de l'espace autour des images */
+    max-width: 100%; /* Adapte l'image à la largeur disponible */
+    height: auto; /* Préserve les proportions */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+/* Section top-pagecrea */
+section.top-pageereputation {
+    background: url('../Images/Créations\ Visuelles.png'); /* Grosse image de fond */
+    background-size: cover; /* Image couvre tout */
+    background-position: center; /* Centre l'image */
+    height: 100vh; /* Occupe toute la hauteur de l'écran */
+    padding: 25px; /* Ajoute de l'espacement autour du contenu */
+}
+
+/* Ajout de responsivité */
+@media (max-width: 768px) {
+    .ereputationunun-page,
+    .ereputationdeux-page {
+        padding: 15px; /* Réduit le padding sur les petits écrans */
+    }
+
+    .texteereputationun,
+    .texteereputationdeux {
+        font-size: 14px; /* Réduit la taille de la police pour les petits écrans */
+        max-width: 100%; /* Texte utilise tout l'espace disponible */
+    }
+
+    .ereputationunpres,
+    .ereputationdeuxpres {
+        margin: 10px auto; /* Moins d'espace autour des images sur mobile */
+        margin-bottom: 60px; /* Espacement sous le texte */
+    }
+}
+
+#ereputationsection h1 {
+    font-size: 2.2em;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 20px;
+    color: #333333;
+    font-family: 'Futura', sans-serif;
+    text-align: center; /* Centre le texte horizontalement */
+}
+
+/* Section générale */
+.datajournalismeun-page,
+.datajournalismedeux-page {
+    background-color: white; /* Fond blanc */
+    padding: 20px; /* Espacement intérieur autour du contenu */
+    margin: 30px auto; /* Centre la section horizontalement et ajoute plus d'espace entre les sections */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre douce */
+    max-width: 1000px; /* Largeur maximale */
+    text-align: center; /* Texte centré horizontalement */
+}
+
+/* Texte des sections */
+.textedatajournalismeun,
+.textedatajournalismedeux {
+    margin-bottom: 40px; /* Espacement sous le texte */
+    color: #333; /* Couleur du texte */
+    font-size: 16px; /* Taille lisible */
+    line-height: 1.8; /* Espacement entre les lignes */
+    text-align: justify; /* Justifie le texte */
+    max-width: 900px; /* Étend un peu plus le texte */
+    margin-left: auto; /* Centre horizontalement */
+    margin-right: auto; /* Centre horizontalement */
+}
+
+/* Images des sections */
+.dataj1pres,
+.dataj2pres {
+    display: block; /* Image en bloc */
+    margin: 20px auto; /* Centre et ajoute de l'espace autour des images */
+    max-width: 80%; /* Adapte l'image à la largeur disponible */
+    height: auto; /* Préserve les proportions */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+/* Section top-pagecrea */
+section.top-pagedatajournalisme {
+    background: url('../Images/Journalisme.png'); /* Grosse image de fond */
+    background-size: cover; /* Image couvre tout */
+    background-position: center; /* Centre l'image */
+    height: 100vh; /* Occupe toute la hauteur de l'écran */
+    padding: 25px; /* Ajoute de l'espacement autour du contenu */
+}
+
+/* Ajout de responsivité */
+@media (max-width: 768px) {
+    .datajournalismeun-page,
+    .datajournalismedeux-page {
+        padding: 15px; /* Réduit le padding sur les petits écrans */
+    }
+
+    .textedatajournalismeun,
+    .textedatajournalismedeux {
+        font-size: 14px; /* Réduit la taille de la police pour les petits écrans */
+        max-width: 100%; /* Texte utilise tout l'espace disponible */
+    }
+
+    .dataj1pres,
+    .dataj2pres {
+        margin: 10px auto; /* Moins d'espace autour des images sur mobile */
+        margin-bottom: 60px; /* Espacement sous le texte */
+    }
+}
+
+#datajournalismesection h1 {
+    font-size: 2.2em;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 20px;
+    color: #333333;
+    font-family: 'Futura', sans-serif;
+    text-align: center; /* Centre le texte horizontalement */
+}
