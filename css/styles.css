@@ -786,7 +786,7 @@ body {
     flex-direction: row-reverse; /* Inverse l'ordre des éléments (image à droite, texte à gauche) */
 }
 /* Texte à droite de l'image (qui devient à gauche après l'inversion) */
-.textedecons {
+.texterig {
     flex: 1; /* Le texte prend l'espace restant */
     color: #333; /* Couleur du texte */
     text-align: justify; /* Justifie le texte */
@@ -794,13 +794,13 @@ body {
     line-height: 1.6; /* Améliore la lisibilité */
     padding: 0 20px; /* Ajoute un peu de padding pour espacer le texte */
 }
-.textedecons p {
+.texterig p {
     margin: 0;
     text-align: justify;
 }
 
 /* Section Présentation */
-.decons-page {
+.rig-page {
     background-color: white; /* Fond blanc */
     padding: 10px 20px; /* Espacement intérieur */
     border-radius: 8px; /* Coins arrondis */
@@ -808,7 +808,7 @@ body {
     margin-bottom: 0px; /* Réduit l'espace entre la présentation et la section suivante */
 }
 
-.deconspres {
+.rigpres {
     max-width: 350px; /* Taille maximale de l'image */
     margin-left: 100px; /* Décale l'image vers la droite */
     margin-right: 50px; /* Espace supplémentaire pour ajuster la position */
@@ -826,18 +826,49 @@ body {
 }
 
 /* Présentation - Section */
-.decons-section {
+.rig-section {
     display: flex; /* Alignement horizontal avec Flexbox */
     align-items: center; /* Centre verticalement l'image et le texte */
     gap: 20px; /* Espacement entre l'image et le texte */
     justify-content: center; /* Centre l'ensemble (image + texte) horizontalement */
 }
 
-.textedecons {
+.texterig {
     flex: 1; /* Le texte prend l'espace restant */
     color: #333; /* Couleur du texte */
     text-align: justify; /* Justifie le texte */
 }
+
+/* Section Présentation */
+.decons-page {
+    background-color: white; /* Fond blanc */
+    padding: 10px 20px; /* Espacement intérieur */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Légère ombre */
+    margin-top: 0; /* Élimine l'espace au-dessus de la section foot */
+}
+
+/* Positionnement de l'image de présentation */
+.deconspres {
+    max-width: 350px; /* Taille maximale de l'image */
+    margin-left: 50px; /* Décale l'image légèrement vers la droite */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Légère ombre */
+    align-self: center; /* Centre verticalement l'image */
+}
+
+/* Présentation - Section : Contient l'image et le texte */
+.decons-section {
+    display: flex; /* Alignement horizontal avec Flexbox */
+    align-items: center; /* Centre verticalement l'image et le texte */
+    gap: 20px; /* Espacement entre l'image et le texte */
+    justify-content: flex-start; /* Aligne l'ensemble à gauche */
+    text-align: justify;
+    max-width: 1200px; /* Optionnel : pour limiter la largeur de la section */
+    margin: 40px auto; /* Centre l'ensemble horizontalement */
+    flex-direction: row-reverse; /* Inverse l'ordre des éléments (image à droite, texte à gauche) */
+}
+
 
 /* Section générale */
 .photoun-page,
@@ -1180,70 +1211,93 @@ audio {
     display: block; /* S'assure qu'elle se comporte comme un bloc */
 }
 
-/* Section générale */
-.emissionun-page,
-.emissiondeux-page {
-    background-color: white; /* Fond blanc */
-    padding: 20px; /* Espacement intérieur autour du contenu */
-    margin: 30px auto; /* Centre la section horizontalement et ajoute plus d'espace entre les sections */
-    border-radius: 8px; /* Coins arrondis */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre douce */
-    max-width: 1000px; /* Largeur maximale */
-    text-align: center; /* Texte centré horizontalement */
+/* Section générale pour les blocs radio */
+.emissionun-page {
+    background-color: white;
+    padding: 20px;
+    margin: 30px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    text-align: center;
 }
 
-/* Texte des sections */
+/* Styles de texte pour les 3 blocs */
 .texteemissionun,
-.texteemissiondeux {
-    margin-bottom: 40px; /* Espacement sous le texte */
-    color: #333; /* Couleur du texte */
-    font-size: 16px; /* Taille lisible */
-    line-height: 1.8; /* Espacement entre les lignes */
-    text-align: justify; /* Justifie le texte */
-    max-width: 900px; /* Étend un peu plus le texte */
-    margin-left: auto; /* Centre horizontalement */
-    margin-right: auto; /* Centre horizontalement */
+.texteemissiondeux,
+.texteemissiontrois {
+    margin-bottom: 40px;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.8;
+    text-align: justify;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Images des sections */
 .ecouteradiopres,
-.radiocmpres {
-    display: block; /* Image en bloc */
-    margin: 20px auto; /* Centre et ajoute de l'espace autour des images */
-    max-width: 100%; /* Adapte l'image à la largeur disponible */
-    height: auto; /* Préserve les proportions */
-    border-radius: 8px; /* Coins arrondis */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère */
+.radiocmpres,
+.studiopres {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Ajout de responsivité */
-@media (max-width: 768px) {
-    .emissionun-page,
-    .emissiondeux-page {
-        padding: 15px; /* Réduit le padding sur les petits écrans */
-    }
-
-    .texteemissionun,
-    .texteemissiondeux {
-        font-size: 14px; /* Réduit la taille de la police pour les petits écrans */
-        max-width: 100%; /* Texte utilise tout l'espace disponible */
-    }
-
-    .ecouteradiopres,
-    .radiocmpres {
-        margin: 10px auto; /* Moins d'espace autour des images sur mobile */
-        margin-bottom: 60px; /* Espacement sous le texte */
-    }
-}
-
-#emissionsection h1 {
+/* Titres des sous-sections */
+#emissionsection h1,
+.texteemissionun h1,
+.texteemissiondeux h1,
+.texteemissiontrois h1 {
     font-size: 2.2em;
     font-weight: bold;
     text-decoration: underline;
     margin-bottom: 20px;
     color: #333333;
     font-family: 'Futura', sans-serif;
-    text-align: center; /* Centre le texte horizontalement */
+    text-align: center;
+}
+
+/* Audio players */
+audio {
+    display: block;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 600px;
+}
+
+/* Responsivité */
+@media (max-width: 768px) {
+    .emissionun-page {
+        padding: 15px;
+    }
+
+    .texteemissionun,
+    .texteemissiondeux,
+    .texteemissiontrois {
+        font-size: 14px;
+        max-width: 100%;
+    }
+
+    .ecouteradiopres,
+    .radiocmpres,
+    .studiopres {
+        margin: 10px auto;
+        margin-bottom: 60px;
+    }
+
+    audio {
+        width: 100%;
+    }
+}
+
+.studiopres {
+  width: 500px; /* ou 400px, selon le rendu souhaité */
+  max-width: 100%;
 }
 
 /* Titres des sections */
@@ -1474,6 +1528,11 @@ section.top-pagegest {
     }
 }
 
+.expodatapres {
+  width: 400px; /* ou 400px, selon le rendu souhaité */
+  max-width: 100%;
+}
+
 #evenementssection h1 {
     font-size: 2.2em;
     font-weight: bold;
@@ -1586,6 +1645,16 @@ section.top-pageereputation {
     text-align: center; /* Centre le texte horizontalement */
 }
 
+.bordoliciouspres {
+  width: 600px; /* ou 400px, selon le rendu souhaité */
+  max-width: 100%;
+}
+
+.lsdesignpres {
+  width: 600px; /* ou 400px, selon le rendu souhaité */
+  max-width: 100%;
+}
+
 /* Section générale */
 .datajournalismeun-page,
 .datajournalismedeux-page {
@@ -1659,4 +1728,206 @@ section.top-pagedatajournalisme {
     color: #333333;
     font-family: 'Futura', sans-serif;
     text-align: center; /* Centre le texte horizontalement */
+}
+
+
+#sitesection h1 {
+    font-size: 2.2em;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 20px;
+    color: #333333;
+    font-family: 'Futura', sans-serif;
+    text-align: center; /* Centre le texte horizontalement */
+}
+
+/* Section générale */
+.site-page {
+    background-color: white; /* Fond blanc */
+    padding: 20px; /* Espacement intérieur autour du contenu */
+    margin: 30px auto; /* Centre la section horizontalement et ajoute plus d'espace entre les sections */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre douce */
+    max-width: 1000px; /* Largeur maximale */
+    text-align: center; /* Texte centré horizontalement */
+}
+
+/* Texte des sections */
+.textesiteun,
+.textesitedeux,
+.textesitetrois {
+    margin-bottom: 40px; /* Espacement sous le texte */
+    color: #333; /* Couleur du texte */
+    font-size: 16px; /* Taille lisible */
+    line-height: 1.8; /* Espacement entre les lignes */
+    text-align: justify; /* Justifie le texte */
+    max-width: 900px; /* Étend un peu plus le texte */
+    margin-left: auto; /* Centre horizontalement */
+    margin-right: auto; /* Centre horizontalement */
+}
+
+/* Images des sections */
+.siteabcpres,
+.siteexplorapres,
+.codeportfoliopres {
+    display: block; /* Image en bloc */
+    margin: 20px auto; /* Centre et ajoute de l'espace autour des images */
+    max-width: 100%; /* Adapte l'image à la largeur disponible */
+    height: auto; /* Préserve les proportions */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+/* Ajout de responsivité */
+@media (max-width: 768px) {
+    .site-page {
+        padding: 15px; /* Réduit le padding sur les petits écrans */
+    }
+
+    .textedesignun,
+    .textedesigndeux,
+    .textedesigntrois {
+        font-size: 14px; /* Réduit la taille de la police pour les petits écrans */
+        max-width: 100%; /* Texte utilise tout l'espace disponible */
+    }
+
+    .siteabcpres,
+    .siteexplorapres,
+    .codeportfoliopres {
+        margin: 10px auto; /* Moins d'espace autour des images sur mobile */
+    }
+}
+
+.siteabcpres {
+  width: 700px; /* ou 400px, selon le rendu souhaité */
+  max-width: 100%;
+}
+
+.siteexplorapres {
+  width: 700px; /* ou 400px, selon le rendu souhaité */
+  max-width: 100%;
+}
+
+.codeportfoliopres {
+  width: 700px; /* ou 400px, selon le rendu souhaité */
+  max-width: 100%;
+}
+
+#reportagesection h1 {
+    font-size: 2.2em;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 20px;
+    color: #333333;
+    font-family: 'Futura', sans-serif;
+    text-align: center; /* Centre le texte horizontalement */
+}
+
+/* Section générale */
+.reportage-page {
+    background-color: white; /* Fond blanc */
+    padding: 20px; /* Espacement intérieur autour du contenu */
+    margin: 30px auto; /* Centre la section horizontalement et ajoute plus d'espace entre les sections */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre douce */
+    max-width: 1000px; /* Largeur maximale */
+    text-align: center; /* Texte centré horizontalement */
+}
+
+/* Texte des sections */
+.textereportageun,
+.textereportagedeux,
+.textereportagetrois {
+    margin-bottom: 40px; /* Espacement sous le texte */
+    color: #333; /* Couleur du texte */
+    font-size: 16px; /* Taille lisible */
+    line-height: 1.8; /* Espacement entre les lignes */
+    text-align: justify; /* Justifie le texte */
+    max-width: 900px; /* Étend un peu plus le texte */
+    margin-left: auto; /* Centre horizontalement */
+    margin-right: auto; /* Centre horizontalement */
+}
+
+/* Images des sections */
+.reportagepres,
+.hotelderegionpres,
+.europepres {
+    display: block; /* Image en bloc */
+    margin: 20px auto; /* Centre et ajoute de l'espace autour des images */
+    max-width: 100%; /* Adapte l'image à la largeur disponible */
+    height: auto; /* Préserve les proportions */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+/* Ajout de responsivité */
+@media (max-width: 768px) {
+    .reportage-page {
+        padding: 15px; /* Réduit le padding sur les petits écrans */
+    }
+
+    .textereportageun,
+    .textereportageeux,
+    .textereportagetrois {
+        font-size: 14px; /* Réduit la taille de la police pour les petits écrans */
+        max-width: 100%; /* Texte utilise tout l'espace disponible */
+    }
+
+    .reportagepres,
+    .hotelderegionpres,
+    .europepres {
+        margin: 10px auto; /* Moins d'espace autour des images sur mobile */
+    }
+}
+
+.reportagepres {
+  width: 500px; /* ou 400px, selon le rendu souhaité */
+  max-width: 100%;
+}
+
+.hotelderegionpres {
+  width: 600px; /* ou 400px, selon le rendu souhaité */
+  max-width: 100%;
+}
+
+.europepres {
+  width: 600px; /* ou 400px, selon le rendu souhaité */
+  max-width: 100%;
+}
+
+.reportagepres {
+  width: 400px; /* ou 400px, selon le rendu souhaité */
+  max-width: 100%;
+}
+
+.soundcloud-link {
+  color: #1a73e8; /* Bleu accessible et lisible */
+  font-weight: bold;
+  text-decoration: none; /* Retire le soulignement par défaut */
+}
+
+.soundcloud-link:hover {
+  text-decoration: underline; /* Soulignement au survol pour l'interactivité */
+}
+
+
+.moipres {
+    display: block; /* Image en bloc */
+    margin: 20px auto; /* Centre et ajoute de l'espace autour des images */
+    max-width: 100%; /* Adapte l'image à la largeur disponible */
+    height: auto; /* Préserve les proportions */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+/* Ajout de responsivité */
+@media (max-width: 768px) {
+    .moipres {
+        margin: 10px auto; /* Moins d'espace autour des images sur mobile */
+    }
+}
+
+.moipres {
+  width: 300px; /* ou 400px, selon le rendu souhaité */
+  max-width: 100%;
 }
